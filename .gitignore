@@ -277,3 +277,6 @@ TSWLatexianTemp*
 
 # Remove personal files
 pdf/
+
+# Remove Large Files
+datasets/GSE48301_RAW.tar
