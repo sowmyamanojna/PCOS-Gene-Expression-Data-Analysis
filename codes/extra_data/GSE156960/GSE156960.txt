@@ -1,0 +1,9 @@
+GSE ID: 156960
+PubDate: 2020/08/28
+Number of Samples: 10
+Title: MBD-seq in ovarian tissues of prenatally androgenized (PNA) mice
+Taxonomy: Mus musculus
+PubMed: []
+SOFT downloaded from: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE156nnn/GSE156960//soft/GSE156960_family.soft.gz
+Platform: Illumina HiSeq 2000 (Mus musculus)
+Raw Data downloaded from: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE156nnn/GSE156960/suppl/

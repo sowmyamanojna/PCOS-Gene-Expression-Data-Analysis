@@ -1,0 +1,9 @@
+GSE ID: 154274
+PubDate: 2020/08/12
+Number of Samples: 24
+Title: RRBS, RNA-seq of placenta in women with PCOS and RNA-seq of hippocampus and hypothalamus in femal rats born to PCOS rats.
+Taxonomy: Homo sapiens; Rattus norvegicus
+PubMed: 32949999
+SOFT downloaded from: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154274//soft/GSE154274_family.soft.gz
+Platform: Illumina HiSeq 2500 (Homo sapiens)
+Raw Data downloaded from: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154274/suppl/

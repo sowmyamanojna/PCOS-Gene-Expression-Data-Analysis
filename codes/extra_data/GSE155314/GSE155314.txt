@@ -1,0 +1,9 @@
+GSE ID: 155314
+PubDate: 2020/10/13
+Number of Samples: 48
+Title: Prenatal Androgenization Alters the Development of GnRH Neuron and Preoptic Area RNA Transcripts in Female Mice (I)
+Taxonomy: Mus musculus
+PubMed: 33095238
+SOFT downloaded from: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE155nnn/GSE155314//soft/GSE155314_family.soft.gz
+Platform: Illumina HiSeq 4000 (Mus musculus)
+Raw Data downloaded from: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE155nnn/GSE155314/suppl/

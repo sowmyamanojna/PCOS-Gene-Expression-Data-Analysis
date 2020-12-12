@@ -9,7 +9,7 @@ def get_val(j):
 	except:
 		return (j[1:-1]) 
 
-def get_mapping():
+def get_mapping(flag=False):
 	df = pd.read_csv("../datasets/combined_annot.csv", index_col=0)
 	
 	id_list = list(df["ID"])
@@ -21,15 +21,26 @@ def get_mapping():
 
 	for i,j in zip(id_list, geneid_list):
 		if j == [""]:
-			exclude_mapping[i] = ""
+			exclude_mapping[i] = np.nan
 		else:
-			mapping[i] = min(j)
+			if len(j) == 1:
+				mapping[i] = j[0]
+			else:
+				mapping[i] = "_".join(str(i) for i in tuple(frozenset(j)))
 
-	print("Number of IDs excluded:", len(exclude_mapping))
-	print("Number of genes mapped:", len(mapping))
-	print("Number of unique gene IDs:", len(set(list(mapping.values()))))
+	if flag:
+		values = mapping.values()
+		set_values = [i for i in values]
+
+		print("Number of IDs excluded:", len(exclude_mapping))
+		print("Number of genes mapped:", len(mapping))
+		print("Number of unique gene IDs:", len(set(set_values)))
 
 	return mapping, exclude_mapping
 
 if __name__ == "__main__":
-	get_mapping()
+	mapping, _ = get_mapping(True)
+	for i,j in enumerate(mapping):
+		print(j, mapping[j])
+		if i>10:
+			break

@@ -1,0 +1,9 @@
+GSE ID: 145461
+PubDate: 2020/09/09
+Number of Samples: 10
+Title: Next Generation Sequencing Analysis of exosomes in follicle fluid of PCOS/non-PCOS patients
+Taxonomy: Homo sapiens
+PubMed: 32651991
+SOFT downloaded from: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE145nnn/GSE145461//soft/GSE145461_family.soft.gz
+Platform: Illumina HiSeq 4000 (Homo sapiens)
+Raw Data downloaded from: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE145nnn/GSE145461/suppl/
