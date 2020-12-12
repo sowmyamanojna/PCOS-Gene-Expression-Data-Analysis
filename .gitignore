@@ -281,3 +281,7 @@ pdf/
 # Remove Large Files
 datasets/GSE48301_RAW.tar
 __pycache__
+
+# Remove other files
+BioBombe/
+tybalt/
