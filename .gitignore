@@ -277,11 +277,13 @@ TSWLatexianTemp*
 
 # Remove personal files
 pdf/
+papers/
 
 # Remove Large Files
 datasets/GSE48301_RAW.tar
 __pycache__
 codes/objs_4000.pkl
+codes/.ipynb_checkpoints
 
 # Remove other files
 BioBombe/
