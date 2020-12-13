@@ -1,0 +1,16 @@
+metanode	abbreviation	metaedges	nodes	unconnected_nodes
+Computational-Gene-Sets-CGN	C4CGN	1	338	0
+Computational-Gene-Sets-CM	C4CM	1	238	0
+Curated-Gene-Sets-CPG	C2CPG	1	1937	0
+Curated-Gene-Sets-REACTOME	C2CPREACTOME	1	284	0
+GO-Gene-Sets-BP	C5BP	1	2207	0
+GO-Gene-Sets-CC	C5CC	1	314	0
+GO-Gene-Sets-MF	C5MF	1	414	0
+Gene	G	14	1335	0
+Hallmarks	H	1	45	0
+Immunologic-Gene-Sets	C7	1	4868	0
+Motif-Gene-Sets-MIR	C3MIR	1	194	0
+Motif-Gene-Sets-TFT	C3TFT	1	596	0
+Oncogenic-Gene-Sets	C6	1	182	0
+Positional-Gene-Sets	C1	1	92	0
+xCell-Cell-Type	XCELL	1	170	0
