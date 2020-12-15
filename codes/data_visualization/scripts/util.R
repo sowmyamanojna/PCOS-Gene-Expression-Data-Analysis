@@ -154,12 +154,12 @@ plot_reconstruction_loss <- function(data_df) {
               aes(x = num_comp,
                   y = reconstruction_cost)) +
     geom_point(aes(color = algorithm,
-                   shape = data_type,
-                   alpha = shuffled),
+                   shape = data_type,),
+                   # alpha = shuffled),
                size = 0.5) +
-    scale_alpha_manual(values = c(0.75, 0.15),
-                       labels = c("Real", "Shuffled"),
-                       name = "Data") +
+#     scale_alpha_manual(values = c(0.75, 0.15),
+#                        labels = c("Real", "Shuffled"),
+#                        name = "Data") +
     scale_shape_manual(name = "Data Type",
                        values = c(16, 17),
                        labels = c("Testing", "Training")) +
