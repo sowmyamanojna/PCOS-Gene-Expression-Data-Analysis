@@ -1,6 +1,6 @@
 # PCOS Gene Expression Data Analysis
 
-The main of the project is: *Capturing biological patterns from gene expression data of Polycystic Ovarian  Syndrome using unsupervised dimensionality reduction algorithms*
+The main objective of this project is: *Capturing biological patterns from gene expression data of Polycystic Ovarian  Syndrome using unsupervised dimensionality reduction algorithms*
 
 ## Motivation
 Polycystic Ovarian Syndrome (PCOS) is an endocrine disorder that affects almost one-tenth of women of reproductive age globally. The exact cause of PCOS is still uncertain. Although the aetiology of PCOS isn’t known, patients diagnosed with PCOS are generally found to exhibit elevated levels of the androgen and lower levels of progesterone. In order to understand the pathophysiology of PCOS, we have explored PCOS gene expression data comprising 9 datasets from the NCBI GEO database.
