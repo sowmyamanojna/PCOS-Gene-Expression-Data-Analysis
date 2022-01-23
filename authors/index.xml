@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Capturing biological patterns from gene expression data of Polycystic Ovarian Syndrome using unsupervised dimensionality reduction algorithms</title>
-    <link>https://example.com/authors/</link>
+    <link>https://sowmyamanojna.github.io/PCOS-Gene-Expression-Data-Analysis/authors/</link>
     <description>Recent content in Authors on Capturing biological patterns from gene expression data of Polycystic Ovarian Syndrome using unsupervised dimensionality reduction algorithms</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2020-{year} spyPCOS</copyright><atom:link href="https://example.com/authors/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2020-{year} spyPCOS</copyright><atom:link href="https://sowmyamanojna.github.io/PCOS-Gene-Expression-Data-Analysis/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://example.com/authors/avlakshmy/</link>
+      <link>https://sowmyamanojna.github.io/PCOS-Gene-Expression-Data-Analysis/authors/avlakshmy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/authors/avlakshmy/</guid>
+      <guid>https://sowmyamanojna.github.io/PCOS-Gene-Expression-Data-Analysis/authors/avlakshmy/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/authors/sowmyamanojna/</link>
+      <link>https://sowmyamanojna.github.io/PCOS-Gene-Expression-Data-Analysis/authors/sowmyamanojna/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/authors/sowmyamanojna/</guid>
+      <guid>https://sowmyamanojna.github.io/PCOS-Gene-Expression-Data-Analysis/authors/sowmyamanojna/</guid>
       <description></description>
     </item>
     

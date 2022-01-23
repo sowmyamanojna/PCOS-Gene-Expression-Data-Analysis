@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Capturing biological patterns from gene expression data of Polycystic Ovarian Syndrome using unsupervised dimensionality reduction algorithms</title>
-    <link>https://example.com/main/</link>
+    <link>https://sowmyamanojna.github.io/PCOS-Gene-Expression-Data-Analysis/main/</link>
     <description>Recent content on Capturing biological patterns from gene expression data of Polycystic Ovarian Syndrome using unsupervised dimensionality reduction algorithms</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020-{year} spyPCOS</copyright>
-    <lastBuildDate>Sun, 23 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/main/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sowmyamanojna.github.io/PCOS-Gene-Expression-Data-Analysis/main/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Main</title>
-      <link>https://example.com/main/content/</link>
+      <link>https://sowmyamanojna.github.io/PCOS-Gene-Expression-Data-Analysis/main/content/</link>
       <pubDate>Sun, 23 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/main/content/</guid>
+      <guid>https://sowmyamanojna.github.io/PCOS-Gene-Expression-Data-Analysis/main/content/</guid>
       <description>Abstract Polycystic Ovarian Syndrome (PCOS) is a disorder caused due to endocrine dysfunction, that affects women of reproductive age. Although the aetiology of PCOS isn’t known, patients diagnosed with PCOS are generally found to exhibit elevated levels of the androgen and lower levels of progesterone.
 In order to understand the pathophysiology of PCOS, we have explored PCOS gene expression data comprising 9 datasets from the NCBI GEO database. We have used unsupervised linear dimensionality reduction techniques such as Principal Component Analysis (PCA), Independent Component Analysis (ICA) &amp;amp; Non-negative Matrix Factorization and non-linear dimensionality reduction techniques such as Variational Auto Encoders (VAE) &amp;amp; Denoising Auto Encoders (DAE) to extract biologically important signals from the data.</description>
     </item>
