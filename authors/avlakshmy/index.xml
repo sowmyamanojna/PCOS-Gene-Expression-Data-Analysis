@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Capturing biological patterns from gene expression data of Polycystic Ovarian Syndrome using unsupervised dimensionality reduction algorithms</title>
-    <link>https://sowmyamanojna.github.io/PCOS-Gene-Expression-Data-Analysis//authors/avlakshmy/</link>
+    <link>https://example.com/authors/avlakshmy/</link>
     <description>Recent content on Capturing biological patterns from gene expression data of Polycystic Ovarian Syndrome using unsupervised dimensionality reduction algorithms</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2020-{year} spyPCOS</copyright><atom:link href="https://sowmyamanojna.github.io/PCOS-Gene-Expression-Data-Analysis//authors/avlakshmy/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2020-{year} spyPCOS</copyright><atom:link href="https://example.com/authors/avlakshmy/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
