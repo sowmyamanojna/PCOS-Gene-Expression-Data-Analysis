@@ -1,0 +1,65 @@
+<!-- Credits to https://github.com/jpescador/hugo-future-imperfect/blob/master/layouts/partials/social.html -->
+
+{{ if .Site.Params.proposal }}
+<li>
+    <a href="{{ .Site.Params.proposal_file }}" target="_blank" rel="noopener">
+        <image src="{{ .Site.Params.proposal_image }}" height="60px"><br>
+            Project Proposal
+    </a>
+</li>
+{{end}}
+
+{{ if .Site.Params.midterm }}
+<li>
+    <a href="{{ .Site.Params.midterm_file }}" target="_blank" rel="noopener">
+        <image src="{{ .Site.Params.midterm_image }}" height="60px"><br>
+            Midterm Report
+    </a>
+</li>
+{{end}}
+
+{{ if .Site.Params.final }}
+<li>
+    <a href="{{ .Site.Params.final_file }}" target="_blank" rel="noopener">
+        <image src="{{ .Site.Params.final_image }}" height="60px"><br>
+            Final Report
+    </a>
+</li>
+{{end}}
+
+{{ if .Site.Params.report }}
+<li>
+    <a href="{{ .Site.Params.report_file }}" target="_blank" rel="noopener">
+        <image src="{{ .Site.Params.report_image }}" height="60px"><br>
+            Report
+    </a>
+</li>
+{{end}}
+
+{{ if .Site.Params.demo }}
+<li>
+    <a href="{{ .Site.Params.demo_url }}" target="_blank" rel="noopener">
+        <image src="{{ .Site.Params.demo_image }}" height="60px"><br>
+            Demo
+    </a>
+</li>
+{{end}}
+
+{{ with .Site.Params.code }}
+<li>
+    <a href="{{ . }}" target="_blank" rel="noopener">
+        <image src="img/github.png" height="60px"><br>
+            Code
+    </a>
+</li>
+{{end}}
+
+{{ with .Site.Params.wandb }}
+<li>
+    <a href="{{ . }}" target="_blank" rel="noopener">
+        <image src="img/wandb.png" height="60px"><br>
+            WandB
+    </a>
+</li>
+{{end}}
+

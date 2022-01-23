@@ -1,0 +1,98 @@
+baseurl = "https://example.com/"
+languageCode = "en-us"
+title = "Project Name"
+theme = "minimal-project"
+enableEmoji = true
+toc = true
+googleAnalytics = ""
+
+# Configure the Markdown renderer.
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Enable user to embed HTML snippets in Markdown content.
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+  [markup.highlight]
+    codeFences = true
+    style = "lovelace"
+
+# Taxonomies.
+[taxonomies]
+  author = "authors"
+
+#
+# Personalization params
+#
+[params]
+    # project specific params
+    course_code_session = "CS6910 Project, Fall 2020"
+    course_name =  "Interesting Course"
+    university = "Indian Institute of Technology Madras"
+
+    math = true
+    # Specify which directory to take main content from
+    mainSections = ["main"]
+
+    # To control social share buttons, 
+    # Open and edit data/page_sharer.toml :)
+
+    # All intro links - pdf, reports, code
+    proposal = false
+    proposal_image = "img/proposal.png"
+    proposal_file = "docs/proposal.pdf"
+    midterm = false
+    midterm_image = "img/ff_paper_mid_term.png"
+    midterm_file = "docs/mid_term.pdf"
+    final = false
+    final_image = "img/final.png"
+    final_file = "docs/final.pdf"
+    demo = true
+    demo_image = "img/demo.png"
+    demo_url = ""
+    code = "https://github.com/sowmyamanojna/hugo-minimal-project/"
+    wandb = ""
+
+#
+# Adjust privacy settings
+# See: https://gohugo.io/about/hugo-and-gdpr/
+#
+[privacy]
+    [disqus]
+      disable = true
+
+    [instagram]
+      disable = false
+      simple = true
+
+    [twitter]
+      disable = false
+      enableDNT = true
+      simple = true
+
+    [vimeo]
+      disable = true
+      simple = true
+
+    [youtube]
+      disable = false
+      privacyEnhanced = true
+
+#
+# In simple mode for Instagram and a site styled with Bootstrap 4, 
+# you may want to disable the inlines styles provided by Hugo:
+# See: https://gohugo.io/about/hugo-and-gdpr/
+#
+[services]
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.48.0"

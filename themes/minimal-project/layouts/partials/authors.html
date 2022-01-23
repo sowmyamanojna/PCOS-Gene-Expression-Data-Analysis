@@ -1,0 +1,12 @@
+<ul class="list-inline">
+  {{ range ($.Site.GetPage "taxonomyTerm" "authors").Pages }}
+   <li>
+       <a href="{{ .Params.www }}">
+         <!-- <img class="img-circle img-thumb" src="{{ .Params.photoThumb }}"> -->
+         {{ .Params.name }}
+       </a>
+   </li>
+  {{ end }}
+  <br>
+  {{ .Site.Params.university }}
+</ul>

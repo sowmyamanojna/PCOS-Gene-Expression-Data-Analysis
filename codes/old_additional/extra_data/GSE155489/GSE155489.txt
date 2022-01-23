@@ -1,9 +1,0 @@
-GSE ID: 155489
-PubDate: 2020/09/08
-Number of Samples: 20
-Title: Comprehensive molecular features of polycystic ovary syndrome revealed by transcriptome analysis of oocytes and cumulus cells
-Taxonomy: Homo sapiens
-PubMed: []
-SOFT downloaded from: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE155nnn/GSE155489//soft/GSE155489_family.soft.gz
-Platform: HiSeq X Ten (Homo sapiens)
-Raw Data downloaded from: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE155nnn/GSE155489/suppl/

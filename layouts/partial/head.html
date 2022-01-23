@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ with .Description }}
+        {{ . }}
+        {{ else }}
+        {{if .IsPage}}{{ .Summary }}    
+        {{ else }}{{ with .Site.Params.description }}
+        {{ . }}
+        {{ end }}{{ end }}{{ end }}"> 
+    
+    <meta name="author" content=" {{ .Site.Params.author_name | default .Site.Author }} ">  
+    <base href="{{ .Site.BaseURL }}">
+    <title>{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+
+   <!-- Bootstrap Core CSS -->
+    <!-- <link href="https://raw.githubusercontent.com/sowmyamanojna/minimal-project/main/static/css/bootstrap.min.css?token=AHTVHGXA2JCEIWFF5PFK7LDA2WN4K" rel="stylesheet" type="text/css"> -->
+    <link href="{{ "css/bootstrap.min.css" | relURL }}" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" type="text/css"> -->
+
+    <!-- Custom CSS -->
+    <link href="{{ "css/project.css" | relURL }}" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="{{ .Site.BaseURL }}css/project.css" type="text/css"> -->
+    
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet"> 
+
+    <!-- Get Font-Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Social Sharing buttons CSS -->
+    <!-- <link href="css/bootstrap-social.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics Internal from HUGO-->
+    {{ template "_internal/google_analytics.html" . }}
+
+
+    <!-- Add kaTeX -->
+      {{ if or .Params.math .Site.Params.math }}
+        {{ partial "math.html" . }}
+      {{ end }}
+      
+    <style>
+    {{ printf "%v" (partial "template.css" . ) | safeCSS  }} 
+  </style>
+
+</head>
+<body>

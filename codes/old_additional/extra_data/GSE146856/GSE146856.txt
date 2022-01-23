@@ -1,9 +1,0 @@
-GSE ID: 146856
-PubDate: 2020/10/28
-Number of Samples: 6
-Title: Novel PGK1 determines AR stability dependent on Spk2 and reprograms granular cell glucose metabolism to facilitate ovulation dysfunction
-Taxonomy: Homo sapiens
-PubMed: 33096483
-SOFT downloaded from: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE146nnn/GSE146856//soft/GSE146856_family.soft.gz
-Platform: HiSeq X Ten (Homo sapiens)
-Raw Data downloaded from: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE146nnn/GSE146856/suppl/
