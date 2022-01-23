@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="
+		"> 
+    
+	<meta name="author" content=" map[] ">  
+    <base href="https://sowmyamanojna.github.io/PCOS-Gene-Expression-Data-Analysis//">
+    <title>Authors</title>
+
+   
+    
+    <link href="/PCOS-Gene-Expression-Data-Analysis/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+
+    
+    <link href="/PCOS-Gene-Expression-Data-Analysis/css/project.css" rel="stylesheet" type="text/css">
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet"> 
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous">
+
+    
+    
+    
+
+    
+    
+
+
+    
+      
+        
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+      
+      
+    <style>
+    body {
+  color: <no value>;
+  font-family: 'PT Serif', serif;
+}
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family: 'PT Serif', serif;
+}
+
+.header-container h1,
+.header-container h2,
+.header-container h3,
+.header-container h4 {
+  color: <no value>;
+}
+ 
+  </style>
+
+</head>
+<body>
+
+<section id="intro">
+	
+	<div class="container">
+		<div class="row">
+			<h2 class="col-md-8 col-md-offset-2 text-center intro">
+				Capturing biological patterns from gene expression data of Polycystic Ovarian Syndrome using unsupervised dimensionality reduction algorithms
+			</h2>
+			<h3 class="col-md-8 col-md-offset-2 text-center intro">
+				CS6024 Project, Fall 2020
+			</h3>
+
+			<div class="row">
+	            <div class="col-md-12 text-center">
+				   <ul class="list-inline">
+  
+   <li>
+       <a href="https://www.linkedin.com/in/lakshmy-a-v-555a06198/">
+         
+         A V Laskhmy
+       </a>
+   </li>
+  
+   <li>
+       <a href="https://sowmyamanojna.github.io/">
+         
+         N Sowmya Manojna
+       </a>
+   </li>
+  
+  <br>
+  Indian Institute of Technology Madras
+</ul>
+
+	            </div>
+	        </div>
+	        <div class="col-md-4 col-md-offset-4 text-center intro-images">
+				<ul class="nav nav-pills nav-justified">
+				
+
+
+
+
+
+
+<li>
+    <a href="docs/final.pdf" target="_blank" rel="noopener">
+        <image src="img/final.png" height="60px"><br>
+            Final Report
+    </a>
+</li>
+
+
+
+
+
+
+
+<li>
+    <a href="https://github.com/sowmyamanojna/hugo-minimal-project/" target="_blank" rel="noopener">
+        <image src="img/github.png" height="60px"><br>
+            Code
+    </a>
+</li>
+
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<style>
+.intro {
+	font-weight: 300;
+}
+</style>
+<main class="container flex">
+    
+    
+        <div class="col-md-8 col-md-offset-2">
+            <h2 id="abstract">Abstract</h2>
+<p>Polycystic Ovarian Syndrome (PCOS) is a disorder caused due to endocrine dysfunction, that
+affects women of reproductive age. Although the aetiology of PCOS isn’t known, patients
+diagnosed with PCOS are generally found to exhibit elevated levels of the androgen and
+lower levels of progesterone.</p>
+<p>In order to understand the pathophysiology of PCOS, we have
+explored PCOS gene expression data comprising 9 datasets from the NCBI GEO database.
+We have used unsupervised linear dimensionality reduction techniques such as Principal
+Component Analysis (PCA), Independent Component Analysis (ICA) &amp; Non-negative Matrix
+Factorization and non-linear dimensionality reduction techniques such as Variational Auto
+Encoders (VAE) &amp; Denoising Auto Encoders (DAE) to extract biologically important signals
+from the data. The VAE network was trained using the binary cross-entropy loss func-
+tion coupled with a Kullback-Leibler divergence penalty, while the DAE network was trained
+using a MSE cost function.</p>
+<p>Our model has identified 5 genes - FAM163A, FOLR2, S100A6,
+AKR1A1 and MCL1, that correspond to the latent dimensions that maximally separate the
+PCOS data points from the control data points. These genes were found to participate in key
+pathways related to PCOS such as insulin secretion, vitamin and mineral absorption, insulin
+resistance, androgen and prostaglandins productions. Additionally, we also worked on
+understanding the ability of the different dimensionality reduction algorithms in identifying
+key features in the biological data, their stability and the similarity in the features identified by each algorithm across different latent dimensions.</p>
+<h2 id="motivation">Motivation</h2>
+<h3 id="1-why-gene-expression">1. Why gene expression?</h3>
+<p>Most cells in a given organism contain the same set of genes, but only a select set of these genes are expressed at any given time. This gene expression is a highly regulated process. When cellular systems are perturbed, changes in the biological processes reflect on the gene expression data.</p>
+<p>Gene expression analysis involves studying the behavior and functioning of individual genes in an organism, by analyzing their gene expression (mRNA) levels. The dynamic functional view provided by gene expression analysis enables us to acquire a better understanding of individual genes, gene networks and biological pathways. This in turn proves very useful in understanding the pathophysiology of diseases, analyzing the effects of mutations, evaluating the efficiency of drugs, and so on. However, due to the enormity of the gene expression data and the large number of parameters that need to be estimated in the process, direct analysis of the data is both tedious and computationally intensive. Hence, many gene expression analysis studies make use of dimensionality reduction methods, such as Principal Component Analysis (PCA), before analyzing the gene expression data.</p>
+<h3 id="2-dimensionality-reduction-and-retransformations">2. Dimensionality Reduction and Retransformations</h3>
+<p>However, deriving insights from the latent (transformed) space alone, is difficult due to the limitations imposed by the transformation. Additionally, we need to decode the latent space representation back to the original space in order to completely understand the biological significance. Unsupervised neural network based approaches, such as autoencoders, can help deal with these shortcomings, by performing both dimensionality reduction (encoding) and decoding. Recent works such as employ Denoising Autoencoders (DAEs), while the works of explore Variational Autoencoders (VAEs). Depending on the algorithm used and the range of latent space dimensionalities explored, different kinds of biological patterns can be captured.</p>
+<!-- Polycystic Ovarian Syndrome (PCOS) is an endocrine disorder that affects almost one- tenth of women of reproductive age globally. The exact cause of PCOS is still uncertain. Many prior works have analyzed differential expressions of certain genes in samples collected from different tissues of PCOS patients as well as non-PCOS controls, in order to gain insights into the pathophysiology of PCOS. Some of these include ovarian theca cells, ovarian tissue cells, omental adipose tissue, granulosa cells, cumulus cells, and endometrial tissue. Many of these studies have employed PCA as a dimensionality reduction technique to analyse the gene expression data. -->
+<p>In our study, we have focused on analyzing gene expression data of PCOS patients as well as non-PCOS controls, in order to infer biological patterns associated with PCOS, by applying unsupervised dimensionality reduction techniques, including Principal Component Analysis (PCA), Independent Component Analysis (ICA), Non-negative Matrix Factorization (NMF), Denoising Autoencoders (DAEs) and Variational Autoencoders (VAEs), across different latent dimensional representations.</p>
+<h2 id="methods">Methods</h2>
+<h3 id="1-pre-processing">1. Pre-Processing</h3>
+<p>All the gene expression data used in our study was obtained from NCBI GEO. A total of 9 datasets related to PCOS was available on GEO. The gene expression datasets and the associated annotation files were accessed and parsed programmatically from the search result.</p>
+<p>The gene expression levels for each dataset was extracted from their respective SOFT files and the mapping between the gene IDs used in the dataset and their Entrez Gene IDs was extracted from their respective annotation files. The distribution of the genes (i.e.) Normal/Control, PCOS or after drug application was extracted from the Sample Subset tab of each dataset.</p>
+<h3 id="2-models">2. Models</h3>
+<p><strong>Linear dimensionality reduction techniques</strong><br>
+The linear dimensionality reduction techniques used are as follows:</p>
+<ul>
+<li>Principal Component Analysis (PCA): PCA identifies linear directions along which the variance of the data is maximum. The directions are then arranged based on the decreasing order of variance. The data is then projected onto the reduced set of directions.</li>
+<li>Independent Component Analysis (ICA): The dimensionality reduction done by ICA is very similar to that of PCA, but, it makes a key assumption that the latent dimensions are mutually independent and non-Gaussian. It is like a rotation of PCA.</li>
+<li>Non-negative Matrix Factorization (NMF): NMF dimensionality reduction is used on samples that have non-negative values. The coefficients in the linear combination of the initial data are necessarily non-negative. Hence, the dimensions that don’t contribute to the latent dimensions have a zero coefficient.</li>
+</ul>
+<p><strong>Non-linear dimensionality reduction techniques</strong><br>
+Autoencoders are unsupervised deep neural networks, which comprise of three main parts: an encoder that performs dimensionality reduction on the input data, one or more hidden layer(s) which capture the latent or hidden representations, and a decoder that decodes the latent dimensional representation back to the original dimension, as the output.</p>
+<ul>
+<li>Variational Autoencoders (VAE): VAEs are stochastic autoencoding frameworks. The hidden layers in a VAE learn and take into account both the mean and the variance of the data. The decoder then samples from this distribution generator (with variations) to produce the output.</li>
+<li>Denoising Autoencoders (DAE): In a DAE, some random noise is deliberately added to the input data, and the network is trained so as to remove the noise and capture the relevant signals.</li>
+</ul>
+<h2 id="results">Results</h2>
+<h3 id="1-strongly-associated-dimensions">1. Strongly Associated Dimensions</h3>
+<p>The strongly associated components are the components that led to a sudden increase in the
+features captured from the data by the algorithm. In order to identify the strongly associated
+dimensions, we have used the correlation between the input data and the reconstructed
+data from the latent dimensions.</p>
+<p>The results for linear dimensionality reduction models are as follows:
+<figure>
+    <img src="img/correlation.png"
+         alt="Figure 1: Correlation between the input and the reconstructed output across different linear algorithm and different latent dimensions." width="100%"/> <figcaption>
+            <p><strong>Figure 1:</strong> Correlation between the input and the reconstructed output across different linear algorithm and different latent dimensions.</p>
+        </figcaption>
+</figure>
+</p>
+<p>The correlation gains obtained after the addition of a new latent dimension is as follows:
+<figure>
+    <img src="img/correlation-gain.png"
+         alt="Figure 2: Correlation gain observed across different algorithms and different latent dimensions." width="100%"/> <figcaption>
+            <p><strong>Figure 2:</strong> Correlation gain observed across different algorithms and different latent dimensions.</p>
+        </figcaption>
+</figure>
+</p>
+<p>The results for non-linear dimensionality reduction models are as follows:
+<figure>
+    <img src="img/non-correlation.png"
+         alt="Figure 3: Correlation between the input and the reconstructed output across different linear algorithm and different latent dimensions." width="100%"/> <figcaption>
+            <p><strong>Figure 3:</strong> Correlation between the input and the reconstructed output across different linear algorithm and different latent dimensions.</p>
+        </figcaption>
+</figure>
+</p>
+<p>The correlation gains obtained after the addition of a new latent dimension is as follows:
+<figure>
+    <img src="img/non-correlation-gain.png"
+         alt="Figure 4: Correlation gain observed across different algorithms and different latent dimensions." width="100%"/> <figcaption>
+            <p><strong>Figure 4:</strong> Correlation gain observed across different algorithms and different latent dimensions.</p>
+        </figcaption>
+</figure>
+</p>
+<p>From the figures above, we can clearly see that the latent dimension 3 causes the maximum gain in correlation.</p>
+<h3 id="2-gene-identification">2. Gene Identification</h3>
+<p>Tailed t-tests were performed by comparing the weights for PCOS vs Control samples to
+identify the gene ID, latent dimensionality and model combination which gives maximum
+separation between the two sets. The results obtained are as follows:</p>
+<table class='table table-striped table-hover'>
+<thead>
+<tr>
+<th>Model</th>
+<th>Gene ID</th>
+<th>Latent Dimension</th>
+<th>− log 10 (P)</th>
+<th>Tissues most expressed in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PCA</td>
+<td>148753</td>
+<td>30</td>
+<td>5.665</td>
+<td>Testis, Adrenal, Gall bladder</td>
+</tr>
+<tr>
+<td>ICA</td>
+<td>2350</td>
+<td>40</td>
+<td>4.677</td>
+<td>Placenta, Gall bladder, Urinary bladder</td>
+</tr>
+<tr>
+<td>NMF</td>
+<td>6277</td>
+<td>60</td>
+<td>2.450</td>
+<td>Colon, Lung, Stomach</td>
+</tr>
+<tr>
+<td>DAE</td>
+<td>10327</td>
+<td>2</td>
+<td>1.747</td>
+<td>Kidney, Duodenum, Small intestine</td>
+</tr>
+<tr>
+<td>VAE</td>
+<td>4170</td>
+<td>5</td>
+<td>1.879</td>
+<td>Bone marrow, Gall bladder, Appendix</td>
+</tr>
+</tbody>
+</table>
+<p>From the above table and figure, we can observe that PCOS vs Control samples were best separated by PCA, with respect to gene ID 148753, in latent dimension 30, with over-expression of the gene in the PCOS samples. This gene ID corresponds to Family with sequence similarity 163 member A. This gene has a biased expression in human tissues such as testis, adrenal and gall bladder.</p>
+<p>PCOS vs Control samples were also well-separated by ICA, with respect to gene ID 2350, in latent dimension 40. This gene ID corresponds to folate receptor beta. This gene has a broad expression in human tissues such as placenta, gall bladder and urinary bladder.</p>
+<p>For the PCA, ICA and NMF models, we observe a general increase in the − log 10 (P ) values (with fluctuations) as the number of latent dimensions increase. However, for the DAE and VAE, we can see an overall decreasing trend in the − log 10 (P ) values as the number of latent dimensions increase. This indicates that PCA, ICA and NMF are able to better distinguish between PCOS and Control samples at relatively higher latent dimensionalities, but DAE and VAE are able to capture this difference better at lower latent dimensionalities.</p>
+<h3 id="3-biological-interpretation">3. Biological Interpretation</h3>
+<p>From the results obtained above, it is interesting to note that our model is able to identify the following genes - FAM163A, FOLR2, S100A6, AKR1A1 and MCL1, that correspond to the latent dimensions that maximally separate the PCOS data points from the control data points. Out of these 5 genes, we got literature evidence for the role of the following genes - FOLR2, S100A6 in PCOS.</p>
+<p>The gene FOLR2 (Gene ID 2350), is known to code for the protein - folate receptor beta. The folate receptor beta protein is known to play a key role in the pathways associated with vitamin digestion and absorption. Perturbations of this pathway, results in low folate production, affecting the utilization of Vitamin B12 and other B vitamins. This in turn affects the extent of the maturation egg released during ovulation. Incomplete maturation, prevents the ovaries from releasing adequate amount of progesterone that is essential in maintaining normal menstrual cycle in women.</p>
+<p>Additionally, vitamin B12 deficiency is also associated with insulin resistance and obesity. The high levels of insulin in the blood results in enhanced production of androgen by the theca cells. This starts a cascade of actions affecting the progesterone levels, extent of maturation of the eggs. This role of folic acid in insulin resistance and PCOS has been further ratified here.</p>
+<p>The gene S100A6 (Gene ID 6277) is also known to code for the S100 Calcium binding protein. This protein is known to play a key role in the stimulation of calcium dependent insulin release and prolactin secretion. They are also known to participate in the estrous cycle.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>We analyzed gene expression data of PCOS patients as well as non-PCOS controls using unsupervised dimensionality reduction techniques such as PCA, ICA, NMF, DAE and VAE, across a range of different latent dimensions. We found that the different models in different latent dimensional representations were able to extract interesting biological patterns about the pathophysiology of PCOS, such as the folate receptor gene and the S100 Calcium binding protein. Hence, we concluded that, in order to derive new and meaningful insights into bio- logical data from gene expression analysis, it is essential to explore different dimensionality reduction algorithms as well as latent dimensions.</p>
+
+        </div>
+        <aside class="toc">
+            <h2 class="toc">Table of Contents</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#abstract">Abstract</a></li>
+    <li><a href="#motivation">Motivation</a>
+      <ul>
+        <li><a href="#1-why-gene-expression">1. Why gene expression?</a></li>
+        <li><a href="#2-dimensionality-reduction-and-retransformations">2. Dimensionality Reduction and Retransformations</a></li>
+      </ul>
+    </li>
+    <li><a href="#methods">Methods</a>
+      <ul>
+        <li><a href="#1-pre-processing">1. Pre-Processing</a></li>
+        <li><a href="#2-models">2. Models</a></li>
+      </ul>
+    </li>
+    <li><a href="#results">Results</a>
+      <ul>
+        <li><a href="#1-strongly-associated-dimensions">1. Strongly Associated Dimensions</a></li>
+        <li><a href="#2-gene-identification">2. Gene Identification</a></li>
+        <li><a href="#3-biological-interpretation">3. Biological Interpretation</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+
+        </aside>
+    
+</main>
+
+
+<style>
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-weight: 500;
+}
+
+ 
+
+</style>
