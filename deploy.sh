@@ -1,15 +1,15 @@
 #!/bin/sh
 
 # Need to be in main for building webpage
-git checkout main
+git checkout complete
 
 # Add changes to git.
 git add .
 
 # Commit changes.
-read -p "Enter 'main' commit message: " msg
+read -p "Enter 'complete' commit message: " msg
 git commit -m "$msg"
-git push origin main
+git push origin complete
 
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 

@@ -1,4 +1,4 @@
-baseurl = "https://example.com/"
+baseurl = "https://sowmyamanojna.github.io/PCOS-Gene-Expression-Data-Analysis/"
 languageCode = "en-us"
 title = "Capturing biological patterns from gene expression data of Polycystic Ovarian Syndrome using unsupervised dimensionality reduction algorithms"
 copyright = '© 2020-{year} spyPCOS'
